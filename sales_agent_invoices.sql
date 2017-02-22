@@ -1,0 +1,1 @@
+SELECT Invoices.InvoiceId, Employee.FirstName|| " " ||Employee.LastName AS "Employee Name" FROM (SELECT * FROM Invoice JOIN Customer ON Invoice.CustomerId = Customer.CustomerId) AS Invoices JOIN Employee ON Employee.EmployeeId = Invoices.SupportRepId

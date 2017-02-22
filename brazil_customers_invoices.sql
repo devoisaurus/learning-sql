@@ -1,0 +1,1 @@
+SELECT Invoice.InvoiceId, Customer.FirstName|| " " ||Customer.LastName AS "Full Name", Invoice.InvoiceDate,Invoice.BillingCountry FROM Invoice JOIN Customer ON Invoice.CustomerId = Customer.CustomerId WHERE Customer.Country = "Brazil"

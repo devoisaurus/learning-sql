@@ -1,0 +1,1 @@
+SELECT TOTAL(Total), InvoiceDate FROM Invoice WHERE InvoiceDate LIKE "2009%" 
